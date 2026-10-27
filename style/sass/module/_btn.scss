@@ -1,0 +1,20 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.btn {
+    &--primary{
+        @include button($color-primary);
+    }
+
+    &:hover {
+        background: $color-primary-dark;
+    }
+
+    &--secondary {
+        @include button($color-dark);
+    }
+
+    &:hover{
+        background: $color-darker;
+    }
+}

@@ -1,0 +1,33 @@
+$color-primary: #3498db;
+$color-primary-dark: #2980b9;
+$color-dark:#2c3e50;
+$color-darker: #1c2833;
+$color-sucess: #2ecc71;
+$color-text-muted: #95a5a6;
+$color-bg: #f7f9fb;
+$color-white: #fff ;
+$color-border: #e1e5ea;
+
+// TYPO // 
+
+$font-main: Arial, sans-serif;
+
+// MISE EN PAGE //
+
+$container-width: 1200px;
+$radius: 4px;
+$radius-card: 8px;
+$shadow-card: 0 2px 6px rgba(0, 0, 0, 0.08);
+$header-height: 70px;
+
+
+// reponsive //
+$breakpoint-md: 768px;
+
+// map des alertes //
+
+$alert-themes: (
+    succes : (bg: #e3f4ea, color: #1e6b3a, border: #2ecc71),
+    warning : (bg: #f7f3e0, color: #8a6d00, border: #f1c40f),
+    error: (bg: #f8e5e5, color: #a12622, border: #e74c3c)
+);

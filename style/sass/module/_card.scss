@@ -1,0 +1,46 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/variables' as *;
+
+.features {
+    padding: 2rem 1.5rem;
+
+    &__title {
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        max-width: $container-width;
+        margin: 0 auto;
+    }
+}
+
+.feature-card {
+    padding: 2rem;
+    background: $color-white;
+    border: 1px solid $color-border;
+    border-radius: $radius-card;
+    box-shadow: $shadow-card;
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+
+    &__badge {
+        padding: 0.25rem 0.5rem;
+        background: rgba($color-primary, 0.15);
+        color: $color-primary;
+        border-radius: $radius;
+        font-size: 0.75rem;
+        font-weight: bold;
+    }
+}
+
+
+

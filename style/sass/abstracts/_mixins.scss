@@ -1,0 +1,14 @@
+@use '../abstracts/variables' as *;
+
+@mixin button ($bg, $color: white, $border: transparent) {
+    padding: 1rem 1.5rem;
+    border: 2px solid $border;
+    border-radius: $radius;
+    background: $bg;
+    color: $color;
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}

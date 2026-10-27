@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevPulse Agency - Projet SASS</title>
+    <!-- Lien vers votre fichier CSS compilé -->
+    <link rel="stylesheet" href="style/css/main.css">
+</head>
+<body>
+
+    <!-- ================= 1. NAVIGATION ================= -->
+    <header class="header">
+        <div class="header__container">
+            <a href="#" class="header__logo">DevPulse<span class="header__logo-dot">.</span></a>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#features" class="nav__link nav__link--active">Fonctionnalités</a></li>
+                    <li class="nav__item"><a href="#pricing" class="nav__link">Tarifs</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <!-- ================= 2. HERO SECTION ================= -->
+        <section class="hero">
+            <div class="hero__container">
+                <h1 class="hero__title">Propulsez votre code vers le futur</h1>
+                <p class="hero__desc">Maîtrisez l'architecture CSS moderne avec SASS, BEM et SMACSS pour des applications scalables et maintenables.</p>
+                <a href="#pricing" class="btn btn--primary">Découvrir les offres</a>
+            </div>
+        </section>
+
+        <!-- ================= 3. SYSTEME D'ALERTES ================= -->
+        <section class="alerts">
+            <div class="alert alert--succes">
+                <strong class="alert__label">Succès :</strong> Votre architecture SASS est prête à être compilée !
+            </div>
+            <div class="alert alert--warning">
+                <strong class="alert__label">Attention :</strong> Le niveau d'imbrication dépasse 3 niveaux.
+            </div>
+            <div class="alert alert--error">
+                <strong class="alert__label">Erreur :</strong> Sélecteur CSS non conforme à la méthodologie BEM.
+            </div>
+        </section>
+
+        <!-- ================= 4. FEATURES SECTION (Grille) ================= -->
+        <section id="features" class="features">
+            <h2 class="features__title">Nos Fonctionnalités Clés</h2>
+
+            <div class="features__grid">
+                <div class="feature-card">
+                    <div class="feature-card__header">
+                        <h3 class="feature-card__title">Modularité Avancée</h3>
+                        <span class="feature-card__badge">SASS</span>
+                    </div>
+                    <p class="feature-card__text">Organisez vos fichiers proprement grâce aux directives `@use` et `@forward`.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-card__header">
+                        <h3 class="feature-card__title">Nomenclature BEM</h3>
+                        <span class="feature-card__badge">Pro</span>
+                    </div>
+                    <p class="feature-card__text">Structurez vos composants avec la rigueur Block__Element--Modifier.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= 5. PRICING SECTION (Tarifs) ================= -->
+        <section id="pricing" class="pricing">
+            <h2 class="pricing__title">Nos Tarifs</h2>
+
+            <div class="pricing__grid">
+                <div class="pricing-card">
+                    <h3 class="pricing-card__title">Standard</h3>
+                    <p class="pricing-card__price">29€<span class="pricing-card__period">/mois</span></p>
+                    <ul class="pricing-card__list">
+                        <li class="pricing-card__item">Architecture SMACSS de base</li>
+                        <li class="pricing-card__item">Support communautaire</li>
+                    </ul>
+                    <a href="#" class="btn btn--secondary">Choisir</a>
+                </div>
+
+                <div class="pricing-card pricing-card--popular">
+                    <span class="pricing-card__badge">Le plus populaire</span>
+                    <h3 class="pricing-card__title">Pro Agency</h3>
+                    <p class="pricing-card__price">79€<span class="pricing-card__period">/mois</span></p>
+                    <ul class="pricing-card__list">
+                        <li class="pricing-card__item">Architecture complète & Avancée</li>
+                        <li class="pricing-card__item">Mixins, Boucles & Fonctions SASS</li>
+                        <li class="pricing-card__item">Support prioritaire 24/7</li>
+                    </ul>
+                    <a href="#" class="btn btn--primary">Choisir Pro</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ================= 6. FOOTER ================= -->
+    <footer class="footer">
+        <div class="footer__container">
+            <p class="footer__copyright">&copy; 2026 DevPulse Agency. Tous droits réservés.</p>
+            <p class="footer__tagline">Développé avec rigueur et SASS.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

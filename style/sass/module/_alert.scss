@@ -1,0 +1,24 @@
+@use "sass:map";
+@use "../abstracts/variables" as *;
+
+.alerts {
+  padding: 1rem 1.5rem 0;
+}
+
+.alert {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-left:4px solid;
+
+    &__label {
+        font-weight: bold;
+    }
+
+    @each $name, $theme in $alert-themes {
+        &--#{$name} {
+            background: map.get($theme, bg);
+            color: map.get($theme, color);
+            border-color: map.get($theme, border);
+        }
+    }
+}

@@ -1,0 +1,18 @@
+@use '../abstracts/variables' as *;
+
+.footer {
+    background: $color-dark;
+    padding: 2rem 1rem;
+    text-align: center;
+
+    &__container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    &__copyright,
+    &__tagline {
+        color: $color-white;
+        margin: 0.5rem 0;
+    }
+}

@@ -1,0 +1,23 @@
+@use '../abstracts/variables' as *;
+
+.nav{
+    &__list {
+        display: flex;
+        gap: 1rem;
+    }
+
+    &__link {
+        display: block;
+        padding: 0.5rem 1rem;
+        color: $color-white;
+        border-bottom: 2px solid transparent;
+    }
+
+    &:hover {
+        border-bottom-color: $color-primary;
+    }
+
+    &--active {
+        border-bottom-color:$color-primary ;
+    }
+}

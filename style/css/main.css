@@ -1,0 +1,255 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f9fb;
+  color: #2c3e50;
+  line-height: 1.5;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background: #2c3e50;
+  z-index: 100;
+}
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 0 1.5rem;
+}
+.header__logo {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.header-dot {
+  color: #3498db;
+}
+
+.footer {
+  background: #2c3e50;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+.footer__container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.footer__copyright, .footer__tagline {
+  color: #fff;
+  margin: 0.5rem 0;
+}
+
+.nav__list {
+  display: flex;
+  gap: 1rem;
+}
+.nav__link {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  border-bottom: 2px solid transparent;
+}
+.nav:hover {
+  border-bottom-color: #3498db;
+}
+.nav--active {
+  border-bottom-color: #3498db;
+}
+
+.btn--primary {
+  padding: 1rem 1.5rem;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  background: #3498db;
+  color: white;
+  font: inherit;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+.btn:hover {
+  background: #2980b9;
+}
+.btn--secondary {
+  padding: 1rem 1.5rem;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  background: #2c3e50;
+  color: white;
+  font: inherit;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+.btn:hover {
+  background: #1c2833;
+}
+
+.features {
+  padding: 2rem 1.5rem;
+}
+.features__title {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.features__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.feature-card {
+  padding: 2rem;
+  background: #fff;
+  border: 1px solid #e1e5ea;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+.feature-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.feature-card__badge {
+  padding: 0.25rem 0.5rem;
+  background: rgba(52, 152, 219, 0.15);
+  color: #3498db;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.alerts {
+  padding: 1rem 1.5rem 0;
+}
+
+.alert {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-left: 4px solid;
+}
+.alert__label {
+  font-weight: bold;
+}
+.alert--succes {
+  background: #e3f4ea;
+  color: #1e6b3a;
+  border-color: #2ecc71;
+}
+.alert--warning {
+  background: #f7f3e0;
+  color: #8a6d00;
+  border-color: #f1c40f;
+}
+.alert--error {
+  background: #f8e5e5;
+  color: #a12622;
+  border-color: #e74c3c;
+}
+
+.hero {
+  padding: 8rem 1.5rem 4rem;
+  background: linear-gradient(135deg, #2c3e50, #1c2833);
+  color: #fff;
+  text-align: center;
+}
+.hero__container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.hero__title {
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+}
+.hero__desc {
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  color: #95a5a6;
+}
+
+.pricing {
+  padding: 2rem 1.5rem;
+}
+.pricing__title {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.pricing__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.pricing-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  background: #fff;
+  border: 1px solid #e1e5ea;
+  border-radius: 8px;
+}
+.pricing-card__price {
+  margin: 1rem 0;
+  color: #3498db;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.pricing-card__period {
+  color: #95a5a6;
+  font-size: 0.75rem;
+  font-weight: normal;
+}
+.pricing-card__list {
+  flex-grow: 1;
+  margin-bottom: 1.5rem;
+  padding-left: 1.5rem;
+  list-style: disc;
+}
+.pricing-card__badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.25rem 0.75rem;
+  background: #2ecc71;
+  color: #fff;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+.pricing-card--popular {
+  border: 2px solid #3498db;
+}
+.pricing-card .btn {
+  display: block;
+  text-align: center;
+}
+
+/*# sourceMappingURL=main.css.map */
